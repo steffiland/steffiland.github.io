@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Rezepte
 ---
 <h1>Rezepte</h1>
@@ -8,7 +8,7 @@ title: Rezepte
   {% for recipe in site.recipes %}
     <li>
         <h2><a href="{{ recipe.url }}">{{ recipe.title }}</a></h2><h3>{{ recipe.position }}</h3>
-      <p>{{ recipe.content | markdownify }}</p>
+      <p>{{ recipe.excerpt | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>
