@@ -120,7 +120,7 @@ defaults:
     values:
       layout: "recipe"
   - scope:
-      path: "assets/static/*/*.html"
+      path: "assets/static"
     values:
       static: true
 
