@@ -9,6 +9,11 @@ This repo contains submodules. So, the correct way to clone and initialize a loc
 * `git submodule init`
 * `git submodule update`
 
+## Updating submodules
+* ... does not seem to work automagically (not as stated in https://help.github.com/en/articles/using-submodules-with-pages)
+* `git submodule update` does not seem to work, too.
+* but `cd` into the submodules directory, then `git pull`, `cd`ing back to this repos root, then `git commit -m 'updating a submodule' -a; git push` seems to work.
+
 ## removing submodules from the repo
 * `git submodule deinit <path_to_submodule>`
 * `git rm <path_to_submodule>`
