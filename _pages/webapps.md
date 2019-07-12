@@ -5,7 +5,8 @@ permalink: /webapps/
 
 The following webapps are available:
 
-{% assign webapp_files = site.static_files | where: "webapp", true %}
-{% for myimage in webapp_files %}
-  {{ myimage.path }}
+{% for webapp in site.static_files %}
+  {% if webapp.path contains 'assets/static' %}
+    <a href="{{ webapp.path }}" alt="{{ webapp.basename }}">{{ webapp.name }}</a>
+  {% endif %}
 {% endfor %}
