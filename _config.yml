@@ -119,6 +119,10 @@ defaults:
       type: recipes
     values:
       layout: "recipe"
+  - scope:
+      path: "assets/static"
+    values:
+      static: true
 
 category_archive:
   type: liquid
