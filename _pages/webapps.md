@@ -1,11 +1,11 @@
 ---
 title: "Webapp Collection"
-layout: post
 permalink: /webapps/
-author_profile: false
 ---
 
 ## Webapp Collection
+
+The following webapps are available:
 
 {% assign webapp_files = site.static_files | where: "webapp", true %}
 {% for myimage in webapp_files %}
