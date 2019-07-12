@@ -1,27 +1,22 @@
-# Minimal Mistakes remote theme starter
+# SteffiLand Blog
 
-Fork this repo for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+this is the official repo for my private blog, hosted with GH Pages, using the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
-Contains basic configuration to get you a site with:
+## How to clone this repo
+This repo contains submodules. So, the correct way to clone and initialize a local working copy, you have to:
+* clone this repo
+* cd into the working copy
+* `git submodule init`
+* `git submodule update`
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+## removing submodules from the repo
+* `git submodule deinit <path_to_submodule>`
+* `git rm <path_to_submodule>`
+* `git commit-m "Removed submodule "`
+* `rm -rf .git/modules/<path_to_submodule>`
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
-
----
-
-## Troubleshooting
-
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
-
+## Useful Links
+- [configure MMistakes Jekyll theme ](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 - [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
 - [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
