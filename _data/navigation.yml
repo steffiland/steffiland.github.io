@@ -9,3 +9,5 @@ main:
     url: /about/
   - title: "Rezepte"
     url: /rezepte/
+  - title: "Webapps"
+    url: /webapps/
