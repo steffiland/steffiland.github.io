@@ -8,6 +8,6 @@ main:
   - title: "About"
     url: /about/
   - title: "Rezepte"
-    url: /rezepte/
+    url: /recipes/
   - title: "Webapps"
     url: /webapps/
