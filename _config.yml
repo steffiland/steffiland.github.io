@@ -115,10 +115,11 @@ defaults:
       layout: single
       author_profile: false
   - scope:
-      path: "_recipes"
+      path: ""
       type: recipes
     values:
       layout: "recipe"
+      author: "Steffi"
   - scope:
       path: "assets/static"
     values:
