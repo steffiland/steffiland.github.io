@@ -16,7 +16,7 @@ Die angegebene Menge reicht für ein Blech, ca. 30 Kekse.
 * 1 Ei
 * 60g Erythrit oder 45g Xylit
 * 1 Prise Salz
-* 1 getrichener TL Guarkernmehl und 1/2 Pckg. Backpulver
+* Optional: 1/2 TL Guarkernmehl und 1/2 Pckg. Backpulver
 
 ## Anleitung
 
@@ -29,7 +29,7 @@ Die angegebene Menge reicht für ein Blech, ca. 30 Kekse.
 ## Varianten
 Bei den folgenden Varianten immer das Vanillearoma weglassen.
 * *Haselnusskekse*: gemahlene Haselnüsse statt Mandeln
-* *Weihnachtskekse:* Zimt oder Spekulationsgewürz hinzufügen
+* *Weihnachtskekse:* 2 gehäufte TL Zimt oder Spekulationsgewürz hinzufügen
 * *Schokokekse:* 3 gehäufte EL Backkakao hinzufügen
 * *Ochsenaugen*: vor dem Backen auf jeden Keks einen kleinen Klecks Marmelade oder pürierte Beeren (optional mit Xylit o.ä. gesüßt) dazugeben
 
