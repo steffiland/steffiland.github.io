@@ -97,6 +97,7 @@ footer:
 
 defaults:
   # _posts
+  # per Default ist alles (wegen Path "") ein Post und bekommt das 'single' Layout
   - scope:
       path: ""
       type: posts
@@ -135,3 +136,4 @@ tag_archive:
 collections:
   recipes:
     output: true
+    permalink: /rezepte/:title
