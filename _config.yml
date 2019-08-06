@@ -70,7 +70,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://steffiland.github.io/wiki/"
     #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
+    #   icon: "fab fa-fw fa-twitter-square"
     #  url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
