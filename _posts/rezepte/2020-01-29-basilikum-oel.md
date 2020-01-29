@@ -3,8 +3,8 @@ title: "Basilikum-Öl"
 categories:
   - test
 tags:
-  - steffi
-  - bla
+  - rezept
+  - heilpflanzen
 ---
 
 ## Zutaten
