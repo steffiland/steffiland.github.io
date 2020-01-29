@@ -15,7 +15,8 @@ tags:
 
 ## Anleitung
 * Basilikum kleinhacken und ins Öl einlegen
-* nach 2 Wochen absieben
+* nach 2 Wochen absieben .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzQ0NTE5NiwxNzExNzg3OTc2XX0=
+eyJoaXN0b3J5IjpbNDA5MDE5MzY2LC01MzM0NDUxOTYsMTcxMT
+c4Nzk3Nl19
 -->
