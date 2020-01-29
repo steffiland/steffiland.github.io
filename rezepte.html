@@ -6,7 +6,7 @@ title: Rezepte
 <ul>
   {% for recipe in site.recipes %}
     <li>
-        <a href="{{site.url}}/{{site.baseurl}}/{{ recipe.url }}">{{ recipe.title }}</a>
+        <a href="{{site.baseurl}}{{ recipe.url }}">{{ recipe.title }}</a>
       <!-- p>{{ recipe.excerpt | markdownify }}</p-->
     </li>
   {% endfor %}
