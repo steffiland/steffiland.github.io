@@ -2,6 +2,8 @@
 title: "Basilikum-Öl"
 categories:
   - rezept
+  - garten
+  - bla/blubb
 tags:
   - rezept
   - heilpflanzen
@@ -15,5 +17,5 @@ tags:
 * Basilikum kleinhacken und ins Öl einlegen
 * nach 2 Wochen absieben
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTc4Nzk3Nl19
+eyJoaXN0b3J5IjpbLTUzMzQ0NTE5NiwxNzExNzg3OTc2XX0=
 -->
