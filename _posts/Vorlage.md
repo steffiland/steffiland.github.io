@@ -1,7 +1,8 @@
 ---
-title: "Basilikum-Öl"
+title: Keiner
 categories:
-  - rezepte
+  - Rezepte
+  - Apotheke
 tags:
   - rezept
   - heilpflanzen
@@ -13,5 +14,5 @@ tags:
 ## Anleitung
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTc4OTY3N119
+eyJoaXN0b3J5IjpbOTAzMDI4NjI5LC0yMzU3ODk2NzddfQ==
 -->
