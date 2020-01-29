@@ -39,7 +39,6 @@ excerpt_separator: <!--more-->
 
 include:
   - _pages
-  - _recipes
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -119,6 +118,12 @@ defaults:
   - scope:
       path: "_recipes"
       type: posts
+    values:
+      layout: "single"
+      author: "Steffi"
+  - scope:
+      path: ""
+      type: recipes
     values:
       layout: "single"
       author: "Steffi"
