@@ -120,7 +120,7 @@ defaults:
       path: "_recipes"
       type: posts
     values:
-      layout: "recipe"
+      layout: "rezept"
       author: "Steffi"
   - scope:
       path: "assets/static"
