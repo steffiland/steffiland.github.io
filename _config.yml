@@ -115,7 +115,7 @@ defaults:
     values:
       layout: single
       author_profile: false
-  # _recipes:  use _layouts/recipe.html
+  # _recipes
   - scope:
       path: ""
       type: recipes
