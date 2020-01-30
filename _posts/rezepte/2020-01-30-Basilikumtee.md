@@ -2,8 +2,6 @@
 categories:
   - apotheke
 tags:
-  - rezept
-  - heilpflanzen
 ---
 
 zum Gurgeln oder Trinken bei Rachenentzündungen. Hilft bei Magenproblemen, Blähungen,Stress, Unruhe, Schlafstörungen.
@@ -19,5 +17,5 @@ zum Gurgeln oder Trinken bei Rachenentzündungen. Hilft bei Magenproblemen, Blä
 ## Bemerkungen
 2mal täglich eine Tasse trinken, aber nicht zu lange, sonst wirkt er nicht mehr so gut.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjYxMDg4Ml19
+eyJoaXN0b3J5IjpbMTgxNjU3NzgxMF19
 -->
