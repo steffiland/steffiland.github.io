@@ -18,9 +18,9 @@ reizlindernd und antibakteriell
 * durch einen Tee- oder Kaffeefilter abseihen und abfüllen.
 
 ## Bemerkungen
-Im Kühlschrank hält der Sirup ca. 6 Monate. Die Einnahme erfolgt bis zum Abklingen der BeschwerdenDosierung:
+Im Kühlschrank hält der Sirup ca. 6 Monate. Die Einnahme erfolgt bis zum Abklingen der Beschwerden. Dosierung:
 * Kinder: 3x täglich 1TL
 * Erwachsene: 3-5x täglich 1-2TL
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI5ODMwMTddfQ==
+eyJoaXN0b3J5IjpbLTU4NDg2NDg1OV19
 -->
