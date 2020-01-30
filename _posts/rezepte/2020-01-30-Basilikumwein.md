@@ -10,13 +10,16 @@ bei Magen-Darm-Beschwerden, Wechseljahresbeschwerden und Migräne.
 
 ## Zutaten
 * 2 hv. frischen Basilikum
-*
+* 1l Weißwein
+* 1 EL Honig
 
 ## Anleitung
-
+* Den Basilkum waschen, gut trocknen und in Streifen schneiden.
+* Alle Zutaten in ein Glas geben, dunkel stellen und täglich schütteln.
+* nach 3-4 Tagen abseiehen und in eine Flasche umfüllen
 
 ## Bemerkungen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDI1NTExMl19
+eyJoaXN0b3J5IjpbMjEwOTQ4NTIwMl19
 -->
