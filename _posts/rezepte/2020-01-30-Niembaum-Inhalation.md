@@ -10,9 +10,10 @@ stark antibakteriell, antiviral und virostatisch
 * 1 hv. Niembaumblätter bzw. Zweige oder 3-5 Tropfen Öl
 
 ## Anleitung
-* über einer Schüssel unter einem Handtuch inhalieren unter Beachtung der üblichen Sicherheitsmaßnahmen
+* über einer Schüssel unter einem Handtuch inhalieren unter Beachtung der üblichen Sicherheitsmaßnahmen.
+* Die Wirkung hält ca. 4h an, dann wiederholen.
 
 ## Bemerkungen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1Njk2MjkwMF19
+eyJoaXN0b3J5IjpbMzkwMzY4NzM1XX0=
 -->
