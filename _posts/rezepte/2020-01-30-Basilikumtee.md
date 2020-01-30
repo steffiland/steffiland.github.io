@@ -1,7 +1,20 @@
+---
+categories:
+  - Apotheke
+tags:
+  - rezept
+  - heilpflanzen
+---
 
+## Zutaten
+* 3TL frische oder 2TL getrocknete Basilikumblätter
+* 250ml Wasser
+* optional Honig zum Süßen
 
+## Anleitung
+* den grob zerkleinerten Basilikum mit dem kochenden Wasser über
 
-> Written with [StackEdit](https://stackedit.io/).
+## Bemerkungen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTM4NDQzNjMwNF19
 -->
