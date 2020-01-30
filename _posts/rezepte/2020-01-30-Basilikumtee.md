@@ -6,7 +6,7 @@ tags:
   - heilpflanzen
 ---
 
-zum Gurgeln oder Trinken bei Rachenentzündungen. Hilft bei Magenproblemen, Stress, Unruhe, Schlafstörungen
+zum Gurgeln oder Trinken bei Rachenentzündungen. Hilft bei Magenproblemen, Blähungen,Stress, Unruhe, Schlafstörungen.
 
 ## Zutaten
 * 3TL frische oder 2TL getrocknete Basilikumblätter
@@ -17,7 +17,7 @@ zum Gurgeln oder Trinken bei Rachenentzündungen. Hilft bei Magenproblemen, Stre
 * den grob zerkleinerten Basilikum mit dem kochenden Wasser übergießen. Damit keine ätherischen Öle verloren gehen, das Glas zudecken und nach 10min abseihen, das Kondensat aus dem Deckel mit in den Tee gießen und bei Bedarf süßen.
 
 ## Bemerkungen
-2mal täglich anzuwenden, aber nicht zu lange, sonst wirkt er nicht mehr so gut.
+2mal täglich eine Tasse trinken, aber nicht zu lange, sonst wirkt er nicht mehr so gut.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MjIxODA5Ml19
+eyJoaXN0b3J5IjpbMjExOTE2OTQzOF19
 -->
