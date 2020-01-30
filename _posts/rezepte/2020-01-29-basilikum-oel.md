@@ -6,7 +6,7 @@ tags:
   - heilpflanzen
 ---
 
-Bei Hautirritationen, Juckreiz (auch Insektenstiche) und Gelenkschmerzen
+lindert Hautirritationen, hemmt Juckreiz (auch Insektenstiche) und Schwellungen, hilft bei Gelenkschmerzen. Basilikum wirkt antibakteriell, entzündungshemmend und fördert die Wundheilung
 
 ## Zutaten
 * eine Handvoll frischen oder 1/2 hv. getrochneten Basilikum
@@ -22,8 +22,8 @@ Bei Hautirritationen, Juckreiz (auch Insektenstiche) und Gelenkschmerzen
 * abkühlen lassen und abseihen
 
 ## Bemerkungen
-Kühl und dunkel in einer gut verschlossenen Flasche
+Kühl und dunkel in einer gut verschlossenen Flasche aufbewahrt, ist das Öl etwa 6 Monate lang haltbar.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODI3MDQ1MCw0MDkwMTkzNjYsLTUzMz
-Q0NTE5NiwxNzExNzg3OTc2XX0=
+eyJoaXN0b3J5IjpbMzk5MjA3MDQsNDA5MDE5MzY2LC01MzM0ND
+UxOTYsMTcxMTc4Nzk3Nl19
 -->
