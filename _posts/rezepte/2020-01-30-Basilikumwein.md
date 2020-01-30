@@ -16,10 +16,10 @@ bei Magen-Darm-Beschwerden, Wechseljahresbeschwerden und Migräne.
 ## Anleitung
 * Den Basilkum waschen, gut trocknen und in Streifen schneiden.
 * Alle Zutaten in ein Glas geben, dunkel stellen und täglich schütteln.
-* nach 3-4 Tagen abseiehen und in eine Flasche umfüllen
+* nach 3-4 Tagen abseiehen und in eine (ausgekochte) Flasche umfüllen.
 
 ## Bemerkungen
-
+Kühl und dunkel gelagrt hält sich der Wein etwa 2 Monate. Bei Bedarf 3mal täglich 2 bis 4cl trinken.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTQ4NTIwMl19
+eyJoaXN0b3J5IjpbLTMwODI2OTMzNV19
 -->
