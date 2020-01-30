@@ -13,7 +13,6 @@ stark antibakteriell, antiviral und virostatisch
 * über einer Schüssel unter einem Handtuch inhalieren unter Beachtung der üblichen Sicherheitsmaßnahmen.
 * Die Wirkung hält ca. 4h an, dann wiederholen.
 
-## Bemerkungen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwMzY4NzM1XX0=
+eyJoaXN0b3J5IjpbLTEyMTUzNTM2MTIsMzkwMzY4NzM1XX0=
 -->
