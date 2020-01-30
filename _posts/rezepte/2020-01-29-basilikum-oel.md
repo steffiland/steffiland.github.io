@@ -3,7 +3,6 @@ title: "Basilikum-Öl"
 categories:
   - apotheke
 tags:
-  - heilpflanzen
 ---
 
 Das Basilikumöl lindert Hautirritationen, hemmt Juckreiz (auch Insektenstiche) und Schwellungen, hilft bei Gelenkschmerzen. Es wirkt außerdem antibakteriell, entzündungshemmend und fördert die Wundheilung.
@@ -24,6 +23,6 @@ Das Basilikumöl lindert Hautirritationen, hemmt Juckreiz (auch Insektenstiche) 
 ## Bemerkungen
 Kühl und dunkel in einer gut verschlossenen Flasche aufbewahrt, ist das Öl etwa 6 Monate lang haltbar.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDYxMTcxMyw0MDkwMTkzNjYsLTUzMz
-Q0NTE5NiwxNzExNzg3OTc2XX0=
+eyJoaXN0b3J5IjpbLTE3NTAyMzY0NzQsMTc4NDYxMTcxMyw0MD
+kwMTkzNjYsLTUzMzQ0NTE5NiwxNzExNzg3OTc2XX0=
 -->
