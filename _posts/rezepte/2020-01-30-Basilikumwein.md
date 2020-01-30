@@ -19,7 +19,7 @@ bei Magen-Darm-Beschwerden, Wechseljahresbeschwerden und Migräne.
 * nach 3-4 Tagen abseiehen und in eine (ausgekochte) Flasche umfüllen.
 
 ## Bemerkungen
-Kühl und dunkel gelagrt hält sich der Wein etwa 2 Monate. Bei Bedarf 3mal täglich 2 bis 4cl trinken.
+Kühl und dunkel gelagert hält sich der Wein etwa 2 Monate. Bei Bedarf 3mal täglich 2 bis 4cl trinken.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODI2OTMzNV19
+eyJoaXN0b3J5IjpbMzA2MjAyMjcyXX0=
 -->
