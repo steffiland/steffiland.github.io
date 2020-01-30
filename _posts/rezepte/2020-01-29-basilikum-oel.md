@@ -18,8 +18,12 @@ Bei Hautirritationen, Juckreiz (auch Insektenstiche) und Gelenkschmerzen
 
 ## alternativ Warmauszug
 * v.a. bei frischem Basilikum sinnvoll, um die Restfeuchte zu entfernen
-* den zerkleinerten B
+* den zerkleinerten Basilikum mit dem Öl in einen Topf geben und für etwa 2h am Siedepunkt simmern lassen.
+* abkühlen lassen und abseihen
+
+## Bemerkungen
+Kühl und dunkel in einer gut verschlossenen Flasche
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MjI3MzYzLDQwOTAxOTM2NiwtNTMzND
-Q1MTk2LDE3MTE3ODc5NzZdfQ==
+eyJoaXN0b3J5IjpbLTY5ODI3MDQ1MCw0MDkwMTkzNjYsLTUzMz
+Q0NTE5NiwxNzExNzg3OTc2XX0=
 -->
