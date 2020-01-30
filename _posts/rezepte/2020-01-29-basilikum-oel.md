@@ -1,22 +1,21 @@
 ---
 title: "Basilikum-Öl"
 categories:
-  - rezept
-  - garten
-  - bla/blubb
+  - apotheke
 tags:
-  - rezept
   - heilpflanzen
 ---
 
+Bei Hautirritationen, Juckreiz (auch Insektenstiche) und Gelenkschmerzen
+
 ## Zutaten
-* eine Handvoll frischen Basilikum
+* eine Handvoll frischen oder 1/2 hv. getrochneten Basilikum
 * 250ml gutes Öl, z.B. Olive oder Sonnenblume
 
 ## Anleitung
 * Basilikum kleinhacken und ins Öl einlegen
 * nach 2 Wochen absieben .
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MDE5MzY2LC01MzM0NDUxOTYsMTcxMT
-c4Nzk3Nl19
+eyJoaXN0b3J5IjpbLTM2ODkwODk1NCw0MDkwMTkzNjYsLTUzMz
+Q0NTE5NiwxNzExNzg3OTc2XX0=
 -->
