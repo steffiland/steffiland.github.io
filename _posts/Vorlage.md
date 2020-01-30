@@ -1,8 +1,8 @@
 ---
 title: Keiner
 categories:
-  - Küche
-  - Apotheke
+  - küche
+  - apotheke
 tags:
   - rezept
   - heilpflanzen
@@ -16,6 +16,6 @@ tags:
 
 ## Bemerkungen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg2MzgxMTAsOTAzMDI4NjI5LC0yMz
-U3ODk2NzddfQ==
+eyJoaXN0b3J5IjpbNjk0ODE0MDUwLDkwMzAyODYyOSwtMjM1Nz
+g5Njc3XX0=
 -->
