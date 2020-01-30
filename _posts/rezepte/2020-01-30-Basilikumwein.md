@@ -1,6 +1,6 @@
 ---
 categories:
-  - Apotheke
+  - apotheke
 tags:
   - rezept
   - heilpflanzen
@@ -21,5 +21,5 @@ bei Magen-Darm-Beschwerden, Wechseljahresbeschwerden und Migräne.
 ## Bemerkungen
 Kühl und dunkel gelagert hält sich der Wein etwa 2 Monate. Bei Bedarf 3mal täglich 2 bis 4cl trinken.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA2MjAyMjcyXX0=
+eyJoaXN0b3J5IjpbMTY4OTkwOTg4OCwzMDYyMDIyNzJdfQ==
 -->
