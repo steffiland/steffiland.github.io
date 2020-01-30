@@ -1,5 +1,5 @@
 ---
-title: Oregano-Öl
+title: "Oregano-Öl"
 categories:
   - apotheke
 tags:
@@ -22,5 +22,5 @@ Das nachfolgende Öl ist zur Anwendung auf der Haut gedacht.
 ## Bemerkungen
 Das Öl ist 1 Jahr lang haltbar. Es wird mehrmals täglich dünn aufgetragen. Dabei aber nur soviel Öl nehmen, wie in die Haut einziehen kann, sie darf nicht dauerhaft überfetten.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDU3NTY2OV19
+eyJoaXN0b3J5IjpbMTU4NDY1ODA4OV19
 -->
