@@ -8,9 +8,10 @@ tags:
 ---
 
  - [ ] Arbeitsplatte pflegen
-{%  include_relative  all_rooms.md  %}
+{%  include_relative  ./all_rooms.md  %}
  - [ ] Schubladen und Schrankfächer auswischen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTE0NTg3NCw2OTA3MDI3OTNdfQ==
+eyJoaXN0b3J5IjpbNTE3OTg1Njc3LC02ODkxNDU4NzQsNjkwNz
+AyNzkzXX0=
 -->
