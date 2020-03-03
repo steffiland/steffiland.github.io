@@ -7,10 +7,10 @@ tags:
   - ppdata
 ---
 
- - [ ] Staubwischen alle waagerechten Oberflächen
- - [ ] Türen und Zargen reinigen
- - [ ] Steckdosen und Schalter reinigen
+ - [ ] Arbeitsplatte pflegen
+{%  include_relative  all_rooms.md  %}
+ - [ ] Schubladen und Schrankfächer auswischen
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNzAyNzkzXX0=
+eyJoaXN0b3J5IjpbLTY4OTE0NTg3NCw2OTA3MDI3OTNdfQ==
 -->
