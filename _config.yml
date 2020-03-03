@@ -138,3 +138,7 @@ collections:
   recipes:
     output: true
     permalink: /rezepte/:title
+
+# extra Javascripte fuer Putzplan inkludieren
+head_scripts:
+  - https://code.jquery.com/jquery-3.4.1.min.js
