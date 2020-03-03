@@ -6,7 +6,7 @@ $( document ).ready(function() {
     var $value;
     $( this ).children('input').each(function(){
       $(this).prop('checked', !$(this)[0].checked);
-      $value = $(this)[0].checked);
+      $value = $(this)[0].checked;
     });
     console.log( $ppid + $itemId + " := " + $value);
     localStorage.setItem($ppid + $itemId , $value);
