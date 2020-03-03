@@ -1,3 +1,7 @@
 $( "li.task-list-item" ).click(function() {
-  $( this ).slideUp();
+  console.log( $(this).text() );
+  $( this ).children('input').each(function () {
+    this.prop("checked", !this.prop("checked"));
+  }
+                              
 });
