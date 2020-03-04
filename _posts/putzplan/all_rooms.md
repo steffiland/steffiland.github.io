@@ -1,10 +1,11 @@
  - [ ] Staubwischen alle waagerechten Oberflächen
  - [x] Türen und Zargen reinigen
  - [ ] Steckdosen und Schalter reinigen
+ - [ ] Fenster von innen putzen
  {%  include putzplan.html id=include.id %}
- - [🗑️](){: .btn .btn--primary .ppclear}
+ [🗑️](){: .btn .btn--primary .ppclear}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxODc5MzA0LC0xOTM5NDk3NjYwLC0xOT
-cxMTE2NDgxLDk3NDM2Njk1Nl19
+eyJoaXN0b3J5IjpbNjgyMDkyMTg2LDMwMTg3OTMwNCwtMTkzOT
+Q5NzY2MCwtMTk3MTExNjQ4MSw5NzQzNjY5NTZdfQ==
 -->
