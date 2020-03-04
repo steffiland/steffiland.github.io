@@ -25,9 +25,9 @@ $( document ).ready(function() {
     var $value = localStorage.getItem($ppid + '.' + $itemId);
     if ( $value != null ) {
       $( this ).children('input').each(function(){
-        $(this).prop('checked', $value ? true : false);
+        $(this).prop('checked', ( $value ? true : false));
       });
-      console.log( $ppid + '.' + $itemId + " = " + $value);
+      console.log( $ppid + '.' + $itemId + " = " + $value + ( $value ? true : false));
     }
   });
 });
