@@ -1,9 +1,9 @@
  - [ ] Staubwischen alle waagerechten Oberflächen
  - [x] Türen und Zargen reinigen
  - [ ] Steckdosen und Schalter reinigen
- {%  include putzplan.html title=include.id %}
+ {%  include putzplan.html id=include.id %}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODQ3MDAyMSwtMTk3MTExNjQ4MSw5Nz
-QzNjY5NTZdfQ==
+eyJoaXN0b3J5IjpbLTE5Mzk0OTc2NjAsLTE5NzExMTY0ODEsOT
+c0MzY2OTU2XX0=
 -->
