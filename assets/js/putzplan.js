@@ -24,7 +24,7 @@ $( document ).ready(function() {
      $(this).text(weekOfMonth());
   });
   $( "a.self").each(function() {
-      $(this).attr("href", $(this).text()); /
+      $(this).attr("href", $(this).attr("dir") + $(this).text()); /
   });
     
   var $ppid = $("#pp-id").text();
