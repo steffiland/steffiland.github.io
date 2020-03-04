@@ -1,5 +1,4 @@
-## Zone 2 Räume
-* 
+* [Küche](../Kueche) mit SPK
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjY3OTM5OV19
+eyJoaXN0b3J5IjpbLTM4ODI2OTJdfQ==
 -->
