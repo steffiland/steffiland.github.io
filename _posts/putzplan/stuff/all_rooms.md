@@ -3,8 +3,8 @@
  - [ ] Steckdosen und Schalter reinigen
  - [ ] Fenster von innen putzen
  - [ ] Fußbodenleisten
-{%  include_relative menu.md id=include.id %}
-
+ {%  include putzplan.html id=include.id %}
+ [🗑️](){: .btn .btn--primary .ppclear}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDU3MjgxNF19
+eyJoaXN0b3J5IjpbLTEzNzQ4NTI1NTddfQ==
 -->
