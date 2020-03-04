@@ -20,7 +20,9 @@ function weekOfMonth(wday, mday) {
 }
 
 $( document ).ready(function() {
-    
+  $( "a.self").each(function() {
+      $(this).attr("href", $(this).text()); /
+  });
   $( ".ppzone" ).each(function() {
      $(this).text(weekOfMonth());
   });
