@@ -6,10 +6,18 @@ $( document ).ready(function() {
     var $value;
     $( this ).children('input').each(function(){
       $(this).prop('checked', !$(this)[0].checked);
-      $value = $(this)[0].checked;
+      $value = $(this)[0].checked ? 1 : 0;
     });
     console.log( $ppid + '.' + $itemId + " := " + $value);
     localStorage.setItem($ppid + '.' + $itemId , $value);
+  });
+  
+  $( ".ppclear" ).click(function() {
+    for (var i = 0; i < localStorage.length; i++){
+      if ( localStorage.key(i).indexOf($ppid + '.') == 0 ) {
+        localStorage.removeItem(localStorage.key(i));
+      }
+    }
   });
 
   $( "li.task-list-item" ).each(function() {
