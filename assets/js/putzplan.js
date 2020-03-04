@@ -20,6 +20,11 @@ function weekOfMonth(wday, mday) {
 }
 
 $( document ).ready(function() {
+    
+  $( ".ppzone" ).each(function() {
+     $(this).text(weekOfMonth());
+  });
+    
   var $ppid = $("#pp-id").text();
 
   $( "li.task-list-item" ).click(function() {
