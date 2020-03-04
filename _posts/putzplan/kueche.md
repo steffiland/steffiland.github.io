@@ -6,8 +6,8 @@
  - [ ] Lampenschirme und Glühbirnen putzen  
  - [ ] Schubladen und Fächer entrümpeln und reinigen - Stück für Stück  
  - [ ] SPK ein Regalfach aufräumen
- - [ ] SPK Regale entstauben  
-Unter der Spüle und in den Mülleimern saubermachen
+ - [ ] SPK ein Regalfach reinigen
+ - [ ] Unter der Spüle und in den Mülleimern saubermachen
 {%  include_relative all_rooms.md id="kueche" %}
 
 #### Angewohnheiten für dauerhafte Sauberkeit:
@@ -22,7 +22,7 @@ Die folgenden guten Angewohnheiten helfen dabei, die Küche dauerhaft sauberzuha
 -   eine Schürze tragen
 -   jeder räumt nach dem Essen sein schmutziges Geschirr selbst weg
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk1MDQyMCwxNDMzOTM0MTgwLC0xND
+eyJoaXN0b3J5IjpbMjA5NTQ2Njk2MCwxNDMzOTM0MTgwLC0xND
 M5NjQ4NjUzLDEyMjk1MzI1OSwtNjg5MTQ1ODc0LDY5MDcwMjc5
 M119
 -->
