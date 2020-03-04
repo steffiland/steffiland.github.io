@@ -18,7 +18,7 @@ tags:
  - [ ] SPK ein Regalfach aufräumen
  - [ ] SPK ein Regalfach reinigen
  - [ ] Unter der Spüle und in den Mülleimern saubermachen
-{%  include_relative ../all_rooms.md id="kueche" %}
+{%  include_relative ../stuff/all_rooms.md id="kueche" %}
 
 #### Angewohnheiten für dauerhafte Sauberkeit:
 
@@ -33,5 +33,5 @@ Die folgenden guten Angewohnheiten helfen dabei, die Küche dauerhaft sauberzuha
 -   eine Schürze tragen
 -   jeder räumt nach dem Essen sein schmutziges Geschirr selbst weg
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwMTg0NDk5XX0=
+eyJoaXN0b3J5IjpbMTc2OTI1ODc5OF19
 -->
