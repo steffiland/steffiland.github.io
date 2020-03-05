@@ -1,5 +1,5 @@
-* [Küche](../Kueche)
+ [Küche](../Kueche)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAyNzQ0NTI4XX0=
+eyJoaXN0b3J5IjpbMjUzNjU3Njk4XX0=
 -->
