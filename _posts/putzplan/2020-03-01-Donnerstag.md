@@ -1,3 +1,4 @@
+---
 title: "Donnerstag"
 categories:
   - putzplan
@@ -9,5 +10,5 @@ tags:
 <!--more-->
 {%  include_relative stuff/menu.md id=page.title %}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMDk2MzUzNF19
+eyJoaXN0b3J5IjpbLTYzMDc5MDQxNV19
 -->
