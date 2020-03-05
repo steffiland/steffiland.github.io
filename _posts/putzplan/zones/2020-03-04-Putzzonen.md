@@ -4,6 +4,9 @@ categories:
   - putzplan
 tags:
 ---
+### Putzzonen
+{%  include_relative Zone1.md %}
+
 ### Putzzonen Originalaufteilung aus dem Buch
 
 -   Zone  1:  [Flur](../Flur),  [Esszimmer](../Esszimmer),  [Außenbereich](../Aussenbereich)
@@ -12,5 +15,5 @@ tags:
 -   Zone  4:  [Schlafzimmer](../Schlafzimmer)  mit Ankleide,  [Bad](../Bad) OG 
 -   Zone  5:  [Stube](../Stube),  [Hobby](../Hobby)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTc1NzcwN119
+eyJoaXN0b3J5IjpbLTU3NDczMzM3MCwxOTM5NzU3NzA3XX0=
 -->
