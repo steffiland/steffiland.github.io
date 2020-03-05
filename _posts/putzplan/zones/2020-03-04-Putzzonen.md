@@ -5,6 +5,7 @@ categories:
 tags:
 ---
 ### Putzzonen
+<!--more-->
 #### Zone 1
 {%  include_relative Zone1.md %}
 #### Zone 2
@@ -24,5 +25,5 @@ tags:
 -   Zone  4:  [Schlafzimmer](../Schlafzimmer)  mit Ankleide,  [Bad](../Bad) OG 
 -   Zone  5:  [Stube](../Stube),  [Hobby](../Hobby)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzc3MDQwNSwxOTM5NzU3NzA3XX0=
+eyJoaXN0b3J5IjpbLTEzNTUzMzE5MDEsMTkzOTc1NzcwN119
 -->
