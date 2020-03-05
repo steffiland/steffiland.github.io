@@ -1,7 +1,5 @@
-* [Flur](../Flur), 
-* [HWR](../HWR),
-* [Bad EG](../BadEG)
+* [Flur](../Flur), [HWR](../HWR), [Bad EG](../BadEG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1NjE1NTA0XX0=
+eyJoaXN0b3J5IjpbLTE0OTI1MDQ3NDhdfQ==
 -->
