@@ -6,11 +6,9 @@ tags:
 ---
 
 <!--more-->
-#### Zone 1
-{%  include_relative Zone1.md %}
-#### Zone 2
-{%  include_relative Zone2.md %}
-#### Zone 3
+* Zone 1: {%  include_relative Zone1.md %}
+* Zone 2: {%  include_relative Zone2.md %}
+*Zone 3
 {%  include_relative Zone3.md %}
 #### Zone 4
 {%  include_relative Zone4.md %}
@@ -25,5 +23,5 @@ tags:
 -   Zone  4:  [Schlafzimmer](../Schlafzimmer)  mit Ankleide,  [Bad](../Bad) OG 
 -   Zone  5:  [Stube](../Stube),  [Hobby](../Hobby)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTU4NTkxNTksMTkzOTc1NzcwN119
+eyJoaXN0b3J5IjpbMTQ5Mjg4MDcyMywxOTM5NzU3NzA3XX0=
 -->
