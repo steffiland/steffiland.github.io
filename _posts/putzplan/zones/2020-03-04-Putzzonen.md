@@ -1,10 +1,10 @@
 ---
-title: "Zone 1"
+title: "Putzzonen Übersicht"
 categories:
   - putzplan
 tags:
 ---
-### Putzzonen
+
 <!--more-->
 #### Zone 1
 {%  include_relative Zone1.md %}
@@ -25,5 +25,5 @@ tags:
 -   Zone  4:  [Schlafzimmer](../Schlafzimmer)  mit Ankleide,  [Bad](../Bad) OG 
 -   Zone  5:  [Stube](../Stube),  [Hobby](../Hobby)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTUzMzE5MDEsMTkzOTc1NzcwN119
+eyJoaXN0b3J5IjpbLTExMTU4NTkxNTksMTkzOTc1NzcwN119
 -->
