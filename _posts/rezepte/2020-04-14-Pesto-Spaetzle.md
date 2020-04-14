@@ -8,7 +8,7 @@ tags:
   - Nudeln
 ---
 
-## Zutaten für 4 Pers
+## Zutaten für 4 Personen
 * 500 g Weizenmehl
 * 2 TL Salz 
 * 4 Eier
@@ -35,5 +35,5 @@ Zum Servieren:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ2MDA5NTIsMjkxMDYwNDIyXX0=
+eyJoaXN0b3J5IjpbLTk2Njg3ODAwMCwyOTEwNjA0MjJdfQ==
 -->
