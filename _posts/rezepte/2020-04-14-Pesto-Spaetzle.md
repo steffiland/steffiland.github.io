@@ -9,7 +9,13 @@ tags:
 ---
 
 ## Zutaten
-* 
+* 500 g Weizenmehl
+* 2 TL Salz 
+* 4 Eier
+* 220 ml lauwarmes Wasser 
+* 1 Glas fe Pesto (190 g)
+
+Zum Bestreuen 2-3 EL kalt gepresstes Olivenöl Salz weißer Pfeffer 50 g Parmesan
 
 ## Anleitung
 * 
@@ -20,11 +26,8 @@ Vorbereitungszeit: 15 Minuten
 
 Zutaten für 4 Personen Für die Spätzle
 
-500 g Instant-Weizenmehl
 
-2 TL Salz 4 Eier (Größe M) 220 ml lauwarmes Wasser 1 Glas fertiges Pesto (190 g)
 
-Zum Bestreuen 2-3 EL kalt gepresstes Olivenöl Salz weißer Pfeffer 50 g Parmesan
 
 1. Spätzle Zutaten zu einem Teig verrühren und so lange schlagen, bis Luftblasen entstehen. Teig ca. 10 Min. Tuhen tassen, nochmals schlagen. Der Teig sollte sich zum Schluss ziehen lassen, ohne zu reißen.
 
@@ -34,5 +37,5 @@ Zum Bestreuen 2-3 EL kalt gepresstes Olivenöl Salz weißer Pfeffer 50 g Parmesa
 
 4. Vorgang wiederholen, bis der Teig verbraucht ist. Mit etwas Olivenöl, Salz und weißem Pfeffer nach Bedarf abschmecken und mit gehobeltem Parmesan servieren.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkxMDYwNDIyXX0=
+eyJoaXN0b3J5IjpbLTE0MDEyNDcwODEsMjkxMDYwNDIyXX0=
 -->
