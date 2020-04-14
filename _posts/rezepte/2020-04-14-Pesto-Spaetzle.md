@@ -1,10 +1,11 @@
 ---
-title: Keiner
+title: Pesto-Spätzle
 categories:
-  - apotheke
+  - Küche
 tags:
   - rezept
-  - heilpflanzen
+  - Kinder
+  - Nudeln
 ---
 
 ## Zutaten
@@ -33,5 +34,5 @@ Zum Bestreuen 2-3 EL kalt gepresstes Olivenöl Salz weißer Pfeffer 50 g Parmesa
 
 4. Vorgang wiederholen, bis der Teig verbraucht ist. Mit etwas Olivenöl, Salz und weißem Pfeffer nach Bedarf abschmecken und mit gehobeltem Parmesan servieren.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDI3MzIwNDJdfQ==
+eyJoaXN0b3J5IjpbMjkxMDYwNDIyXX0=
 -->
