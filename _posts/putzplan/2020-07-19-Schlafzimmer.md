@@ -5,36 +5,10 @@ categories:
 tags: Zimmer
 ---
 <!--more-->
- - [ ] ⚠️Kühlschrank
-   - Abgelaufene Lebensmittel aussortieren 
-   - Kühlschrank saubermachen
- - [ ] Fronten abwischen  
- - [ ] Reinigung des Herds  
- - [ ] Grundreinigung Backofen
- - [ ] Grundreinigung Mikrowelle  
- - [ ] Kaffeemaschine reinigen  
- - [ ] Lampenschirm und Glühbirne putzen  
- - [ ] Schubladen und Fächer entrümpeln und reinigen - Stück für Stück  
- - [ ] SPK ein Regalfach aufräumen
- - [ ] SPK ein Regalfach reinigen
- - [ ] Unter der Spüle und in den Mülleimern saubermachen
+ - [ ] 
 <!--more-->
-{%  include_relative stuff/all_rooms.md id="kueche" %}
-
-
-#### Angewohnheiten für dauerhafte Sauberkeit:
-
-Die folgenden guten Angewohnheiten helfen dabei, die Küche dauerhaft sauberzuhalten:
-
--   Der Esstisch wird ab jetzt immer leer und aufgeräumt gehalten. Das klappt am besten, wenn etwas Dekoratives darauf steht.
-- Hotspot Tresen aufgeräumt halten
--   Küchenspüle leer und sauber halten: schmutziges Geschirr nach dem Abwaschen gleich abtrocknen und wegräumen
--   Eine Liste von Lieblingsgerichten Stück für Stück erarbeiten und die Zutaten dafür immer da haben
--   sauberen Geschirrspüler sobald wie möglich aufräumen
--   nie auf höchster Stufe kochen
--   eine Schürze tragen
--   jeder räumt nach dem Essen sein schmutziges Geschirr selbst weg
+{%  include_relative stuff/all_rooms.md id="schlafzimmer" %}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTEzMzQzN119
+eyJoaXN0b3J5IjpbMTY5NTIwNzkwXX0=
 -->
