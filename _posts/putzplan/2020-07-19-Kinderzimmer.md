@@ -1,0 +1,22 @@
+---
+title: "Schlafzimmer"
+categories:
+  - putzplan
+tags: Zimmer
+---
+<!--more-->
+ - [ ] herumliegende Kledung wegräumen
+ - [ ] 27-Dinge-Wegwerf-Boogie
+ - [ ] Möbeloberflächen abwischen
+ - [ ] Spinnweben entfernen
+ - [ ] Bettwäsche und Matratzenauflage waschen
+ - [ ] Matratze wenden
+ - [ ] einige Schubladen sortieren
+ - [ ] Kleiderschrank Fächer ordentlich machen
+ - [ ] unter dem Bett putzen
+<!--more-->
+{%  include_relative stuff/all_rooms.md id="kindzimmer" %}
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwNTUzMTA2MzddfQ==
+-->
