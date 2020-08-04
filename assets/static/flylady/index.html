@@ -154,6 +154,12 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/_Macros/dayofweek.js</li>
+
+<li>$:/_Macros/weekofmonth.js</li>
+
+<li>$:/config/AutoSave</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
@@ -578,6 +584,90 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20190712200609887" modified="20190712201038994" module-type="macro" tags="WikiTweaks" title="$:/_Macros/dayofweek.js" type="application/javascript">
+<pre>/*\
+title: dayofweek.js
+type: application/javascript
+module-type: macro
+This is a macro returns the mane of the day of the week in german
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;dayofweek&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+   
+    var weekdays = [&quot;Sonntag&quot;, &quot;Montag&quot;, &quot;Dienstag&quot;, &quot;Mittwoch&quot;, &quot;Donnerstag&quot;, &quot;Freitag&quot;, &quot;Samstag&quot;];
+    return weekdays[wday]; 
+
+};
+
+})();</pre>
+</div>
+<div created="20190311113332172" modified="20190712074945698" module-type="macro" tags="WikiTweaks" title="$:/_Macros/weekofmonth.js" type="application/javascript">
+<pre>/*\
+title: weekofmonth.js
+type: application/javascript
+module-type: macro
+This is a macro returns the number of the week in the month
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;weekofmonth&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+    if (!mday)  { mday= d.getDate(); }
+    //mday = 1 ... 31 (day of month)
+
+    //we start counting weeks with 1:
+    var wnum = 1;
+    var add = 2;
+    // if the month starts on a monday: ...
+    if (((mday - wday) %7) == 0 ) { add = 1; }
+
+    // if (mday &lt; wday) { wnum = 1; }
+    if (mday &gt;= wday) {
+        wnum = Math.floor((mday -wday)/7) + add;
+    }
+    return wnum; 
+
+};
+
+})();</pre>
+</div>
+<div created="20200804200024442" modified="20200804200024442" title="$:/config/AutoSave">
+<pre>no</pre>
+</div>
 <div created="20200804195410856" modified="20200804195410856" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
@@ -9987,7 +10077,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>Folgende Tiddler wurden importiert:
 
-# [[$:/favicon.ico]]</pre>
+# [[$:/_Macros/dayofweek.js]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -13861,10 +13951,10 @@ Error message and password prompt
 <div created="20200804195641257" modified="20200804195641257" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
-<div created="20200804192634971" modified="20200804195808968" title="$:/state/tab-1749438307">
+<div created="20200804192634971" modified="20200804200131078" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20200804192636127" modified="20200804194006739" title="$:/state/tab-2065006209">
+<div created="20200804192636127" modified="20200804200028554" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20200804192520060" modified="20200804195848492" title="$:/state/tab/sidebar--595412856">
@@ -13873,7 +13963,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>yes</pre>
 </div>
-<div created="20200804195819518" list="$:/Import $:/ControlPanel FlyLady [[Wichtige Links]]" modified="20200804195908425" title="$:/StoryList">
+<div created="20200804195819518" list="$:/ControlPanel FlyLady [[Wichtige Links]]" modified="20200804195908425" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
