@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>FlyLady ‚Äî Ì†ΩÌ∞ù</title>
+<title>FlyLady ‚Äî </title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -233,6 +233,10 @@ Error message and password prompt
 
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
+
+<li>$:/_Macros/dayofweek.js</li>
+
+<li>$:/_Macros/weekofmonth.js</li>
 
 <li>$:/config/AutoSave</li>
 
@@ -528,10 +532,6 @@ Error message and password prompt
 
 <li>DonnerstagData</li>
 
-<li>Draft of 'Neuer Tiddler'</li>
-
-<li>Draft of 'TestData'</li>
-
 <li>ErinnerungenData</li>
 
 <li>Esszimmer</li>
@@ -624,10 +624,6 @@ Error message and password prompt
 
 <li>StubeData</li>
 
-<li>Test</li>
-
-<li>TestData</li>
-
 <li>testHidden</li>
 
 <li>TiddlyWikiLinks</li>
@@ -662,7 +658,88 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200804200231194" modified="20200804200231194" title="$:/config/AutoSave">
+<div created="20190712200609887" modified="20190712201038994" module-type="macro" tags="WikiTweaks" title="$:/_Macros/dayofweek.js" type="application/javascript">
+<pre>/*\
+title: dayofweek.js
+type: application/javascript
+module-type: macro
+This is a macro returns the mane of the day of the week in german
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;dayofweek&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+   
+    var weekdays = [&quot;Sonntag&quot;, &quot;Montag&quot;, &quot;Dienstag&quot;, &quot;Mittwoch&quot;, &quot;Donnerstag&quot;, &quot;Freitag&quot;, &quot;Samstag&quot;];
+    return weekdays[wday]; 
+
+};
+
+})();</pre>
+</div>
+<div created="20190311113332172" modified="20190712074945698" module-type="macro" tags="WikiTweaks" title="$:/_Macros/weekofmonth.js" type="application/javascript">
+<pre>/*\
+title: weekofmonth.js
+type: application/javascript
+module-type: macro
+This is a macro returns the number of the week in the month
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;weekofmonth&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+    if (!mday)  { mday= d.getDate(); }
+    //mday = 1 ... 31 (day of month)
+
+    //we start counting weeks with 1:
+    var wnum = 1;
+    var add = 2;
+    // if the month starts on a monday: ...
+    if (((mday - wday) %7) == 0 ) { add = 1; }
+
+    // if (mday &lt; wday) { wnum = 1; }
+    if (mday &gt;= wday) {
+        wnum = Math.floor((mday -wday)/7) + add;
+    }
+    return wnum; 
+
+};
+
+})();</pre>
+</div>
+<div created="20200804200024442" modified="20200804200024442" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
 <div created="20200804195410856" modified="20200804195410856" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
@@ -10074,7 +10151,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>Folgende Tiddler wurden importiert:
 
-# [[$:/favicon.ico]]</pre>
+# [[$:/_Macros/dayofweek.js]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -13936,10 +14013,10 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200804192610097" modified="20200804200721649" title="$:/SiteSubtitle">
-<pre>Ì†ΩÌ∞ù</pre>
+<div created="20200804192610097" modified="20200804192610097" title="$:/SiteSubtitle">
+<pre></pre>
 </div>
-<div created="20200804192603426" modified="20200804200632128" title="$:/SiteTitle">
+<div created="20200804192603426" modified="20200804200823070" title="$:/SiteTitle">
 <pre>FlyLady</pre>
 </div>
 <div created="20200804195651200" modified="20200804195705393" title="$:/state/tab--219645345">
@@ -13948,19 +14025,19 @@ Error message and password prompt
 <div created="20200804195641257" modified="20200804195641257" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
-<div created="20200804192634971" modified="20200804200622279" title="$:/state/tab-1749438307">
+<div created="20200804192634971" modified="20200804201033730" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200804192636127" modified="20200804200620309" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200804192520060" modified="20200804195848492" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200804192520060" modified="20200804201042037" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200804200615666" list="$:/ControlPanel $:/SiteSubtitle FlyLady" modified="20200804200655181" title="$:/StoryList">
+<div created="20200804200757598" list="$:/ControlPanel FlyLady [[Wichtige Links]] $:/plugins/tiddlywiki/browser-storage/readme" modified="20200804200932549" title="$:/StoryList">
 <pre></pre>
 </div>
 <div title="$:/temp/BrowserStorage/Log">
@@ -15165,12 +15242,6 @@ Saugroboter reinigen:0</pre>
  Dankeskarten schreiben:0
  Auto innen saubermachen:0</pre>
 </div>
-<div created="20200804190720407" draft.of="Neuer Tiddler" draft.title="Neuer Tiddler" modified="20200804190726684" tags="" title="Draft of 'Neuer Tiddler'" type="text/plain">
-<pre></pre>
-</div>
-<div _canonical_uri="00_readme.md" created="20200804190141120" draft.of="TestData" draft.title="TestData" modified="20200804190706610" tags="Data" title="Draft of 'TestData'" type="text/plain">
-<pre></pre>
-</div>
 <div created="20190806075950067" modified="20190808074144859" tags="Data" title="ErinnerungenData" type="application/json">
 <pre>{
   &quot;Morgenroutine&quot;: &quot;7:00&quot;,
@@ -15597,12 +15668,6 @@ Glast√ºr reinigen:0
 Telefon abwischen:0
 schwer zug√§ngliche Ecken saugen:0
 Lampen entstauben:0</pre>
-</div>
-<div created="20200804190651179" modified="20200804190656339" tags="Wochentag Routine" title="Test">
-<pre>{{||RaumTemplate}}</pre>
-</div>
-<div _canonical_uri="00_readme.md" created="20200804190141120" modified="20200804190659496" tags="Data" title="TestData" type="text/plain">
-<pre></pre>
 </div>
 <div created="20190807084900421" modified="20190807084926620" tags="hiddenTiddler" title="testHidden">
 <pre>blablubb</pre>
