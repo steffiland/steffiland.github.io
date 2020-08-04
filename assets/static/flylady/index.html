@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Flylady ‚Äî </title>
+<title>Flylady Ì†æÌµù ‚Äî </title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -154,7 +154,21 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/_Macros/dayofweek.js</li>
+
+<li>$:/_Macros/weekofmonth.js</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
+
 <li>$:/core</li>
+
+<li>$:/DefaultTiddlers</li>
+
+<li>$:/favicon.ico</li>
 
 <li>$:/GitHub/Branch</li>
 
@@ -354,6 +368,96 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20190712200609887" modified="20190712201038994" module-type="macro" tags="WikiTweaks" title="$:/_Macros/dayofweek.js" type="application/javascript">
+<pre>/*\
+title: dayofweek.js
+type: application/javascript
+module-type: macro
+This is a macro returns the mane of the day of the week in german
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;dayofweek&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+   
+    var weekdays = [&quot;Sonntag&quot;, &quot;Montag&quot;, &quot;Dienstag&quot;, &quot;Mittwoch&quot;, &quot;Donnerstag&quot;, &quot;Freitag&quot;, &quot;Samstag&quot;];
+    return weekdays[wday]; 
+
+};
+
+})();</pre>
+</div>
+<div created="20190311113332172" modified="20190712074945698" module-type="macro" tags="WikiTweaks" title="$:/_Macros/weekofmonth.js" type="application/javascript">
+<pre>/*\
+title: weekofmonth.js
+type: application/javascript
+module-type: macro
+This is a macro returns the number of the week in the month
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+
+exports.name = &quot;weekofmonth&quot;;
+
+exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
+
+/*
+Run the macro
+*/
+
+exports.run = function(wday, mday) {
+    var d = new Date();
+    if ( !wday ) { wday  = d.getDay(); }
+    //wday = 0 [Sun] ... 6 [Sat] (day of week)
+    if (!mday)  { mday= d.getDate(); }
+    //mday = 1 ... 31 (day of month)
+
+    //we start counting weeks with 1:
+    var wnum = 1;
+    var add = 2;
+    // if the month starts on a monday: ...
+    if (((mday - wday) %7) == 0 ) { add = 1; }
+
+    // if (mday &lt; wday) { wnum = 1; }
+    if (mday &gt;= wday) {
+        wnum = Math.floor((mday -wday)/7) + add;
+    }
+    return wnum; 
+
+};
+
+})();</pre>
+</div>
+<div created="20200804195144043" modified="20200804195144043" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
+<div created="20200804195154825" modified="20200804195154825" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions">
+<pre>show</pre>
+</div>
+<div created="20200804195141368" modified="20200804195141368" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
+<pre>show</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -9727,101 +9831,35 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20200804195230072" modified="20200804195230072" title="$:/DefaultTiddlers">
+<pre>FlyLady
+</pre>
+</div>
+<div created="20190314102534238" description="Favicon f√ºr die App" modified="20190712075041516" tags="WikiTweaks" title="$:/favicon.ico" type="image/png">
+<pre>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</pre>
+</div>
 <div created="20200804193445249" modified="20200804193445249" title="$:/GitHub/Branch">
 <pre></pre>
 </div>
-<div created="20200804193248920" modified="20200804193825373" title="$:/GitHub/Filename">
+<div created="20200804193248920" modified="20200804195329342" title="$:/GitHub/Filename">
 <pre>index.html</pre>
 </div>
-<div created="20200804193246916" modified="20200804193824323" title="$:/GitHub/Path">
+<div created="20200804193246916" modified="20200804195323374" title="$:/GitHub/Path">
 <pre>/assets/static/flylady/</pre>
 </div>
-<div created="20200804193414124" modified="20200804193738982" title="$:/GitHub/Repo">
+<div created="20200804193414124" modified="20200804195313121" title="$:/GitHub/Repo">
 <pre>steffiland/wiki</pre>
 </div>
 <div created="20200804193447032" modified="20200804193447032" title="$:/GitHub/ServerURL">
 <pre></pre>
 </div>
-<div created="20200804193107123" modified="20200804193721665" title="$:/GitHub/Username">
+<div created="20200804193107123" modified="20200804195301523" title="$:/GitHub/Username">
 <pre>steffiland</pre>
 </div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Abendroutine]]
-# [[AbendroutineData]]
-# [[aktuelle Putzzone]]
-# [[Au√üenbereich]]
-# [[Au√üenbereichData]]
-# [[Bad]]
-# [[Bad dauerhaft sauberhalten]]
-# [[Bad dauerhaft sauberhaltenData]]
-# [[BadData]]
-# [[Data]]
-# [[Dienstag]]
-# [[DienstagData]]
-# [[Donnerstag]]
-# [[DonnerstagData]]
-# [[Draft of 'Neuer Tiddler']]
-# [[Draft of 'TestData']]
-# [[ErinnerungenData]]
-# [[Esszimmer]]
-# [[EsszimmerData]]
-# [[Flur]]
-# [[FlurData]]
-# [[FlurOG]]
-# [[FlurOGData]]
-# [[FlyLady]]
-# [[Freitag]]
-# [[FreitagData]]
-# [[Hobby]]
-# [[HobbyData]]
-# [[HTMLHeaderIncludes]]
-# [[HWR]]
-# [[HWRData]]
-# [[Kinderzimmer]]
-# [[KinderzimmerData]]
-# [[K√ºche]]
-# [[K√ºche dauerhaft sauberhalten]]
-# [[K√ºcheAnfang]]
-# [[K√ºcheAnfangData]]
-# [[K√ºcheData]]
-# [[Mittwoch]]
-# [[MittwochData]]
-# [[Montag]]
-# [[MontagData]]
-# [[Morgenroutine]]
-# [[Morgenroutine2]]
-# [[Morgenroutine2Data]]
-# [[MorgenroutineData]]
-# [[Nachmittagsroutine]]
-# [[NachmittagsroutineData]]
-# [[Putzpl√§ne nach R√§umen]]
-# [[Putzzonen]]
-# [[PutzzonenData]]
-# [[PutzzonenOriginalData]]
-# [[RaumTemplate]]
-# [[Routinen]]
-# [[Samstag]]
-# [[SamstagData]]
-# [[Schlafzimmer]]
-# [[SchlafzimmerData]]
-# [[Sonntag]]
-# [[SonntagData]]
-# [[Stube]]
-# [[StubeData]]
-# [[Test]]
-# [[TestData]]
-# [[testHidden]]
-# [[TiddlyWikiLinks]]
-# [[Versteckter Wiki-Content]]
-# [[Weekdays]]
-# [[Wichtige Links]]
-# [[Wiki Stylesheet]]
-# [[Wochenplan]]
-# [[Wochenplantag]]
-# [[W√∂chentliche Haussegung]]
-# [[W√∂chentliche HaussegungData]]</pre>
+# [[testHidden]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9829,22 +9867,22 @@ Error message and password prompt
 <div created="20200804192610097" modified="20200804192610097" title="$:/SiteSubtitle">
 <pre></pre>
 </div>
-<div created="20200804192603426" modified="20200804192604928" title="$:/SiteTitle">
-<pre>Flylady</pre>
+<div created="20200804192603426" modified="20200804195218886" title="$:/SiteTitle">
+<pre>Flylady Ì†æÌµù</pre>
 </div>
-<div created="20200804192634971" modified="20200804192634971" title="$:/state/tab-1749438307">
+<div created="20200804192634971" modified="20200804195257557" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200804192636127" modified="20200804194006739" title="$:/state/tab-2065006209">
+<div created="20200804192636127" modified="20200804192636127" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200804192520060" modified="20200804192520060" title="$:/state/tab/sidebar--595412856">
+<div created="20200804192520060" modified="20200804194901098" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>no</pre>
+<pre>yes</pre>
 </div>
-<div created="20200804193715476" list="$:/ControlPanel GettingStarted" modified="20200804193715476" title="$:/StoryList">
+<div created="20200804195251220" list="$:/ControlPanel GettingStarted" modified="20200804195251220" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10529,7 +10567,7 @@ Lampen entstauben:0</pre>
 <div _canonical_uri="00_readme.md" created="20200804190141120" modified="20200804190659496" tags="Data" title="TestData" type="text/plain">
 <pre></pre>
 </div>
-<div created="20190807084900421" modified="20190807084926620" tags="hiddenTiddler" title="testHidden">
+<div created="20190807084900421" modified="20200804194754554" tags="hiddenTiddler" title="testHidden">
 <pre>blablubb</pre>
 </div>
 <div created="20190316193510449" modified="20190316193539037" tags="" title="TiddlyWikiLinks">
