@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Flylady Ì†æÌµù ‚Äî </title>
+<title>Flylady ‚Äî Ì†æÌµù</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -66,6 +66,86 @@ document.body.appendChild(s);
 }
 </script  -->
 
+<script>
+/*\
+title: $:/plugins/tiddlywiki/browser-storage/rawmarkup.js
+type: application/javascript
+module-type: library
+
+Startup code injected as raw markup
+
+\*/
+
+(function() {
+
+// Need to initialise these because we run before bootprefix.js and boot.js
+$tw = window.$tw || Object.create(null);
+$tw.hooks = $tw.hooks || { names: {}};
+$tw.boot = $tw.boot || {};
+$tw.boot.preloadDirty = $tw.boot.preloadDirty || [];
+
+// Hook the point in the startup process when the tiddlers have been loaded but plugins not unpacked
+var hookName = "th-boot-tiddlers-loaded";
+if(Object.prototype.hasOwnProperty.call($tw.hooks.names,hookName)) {
+	$tw.hooks.names[hookName].push(hookBootTiddlersLoaded);
+} else {
+	$tw.hooks.names[hookName] = [hookBootTiddlersLoaded];
+}
+
+// Load tiddlers from browser storage
+function hookBootTiddlersLoaded() {
+	var url = window.location.pathname,
+		log = [];
+	// Check that browser storage is available
+	try {
+		window.localStorage;
+	} catch(e) {
+		return;
+	}
+	// Step through each browsder storage item
+	for(var index=0; index<window.localStorage.length; index++) {
+		var key = window.localStorage.key(index),
+			parts = key.split("#");
+		// If it's ours
+		if(parts[0] === "tw5" && parts[1] === url) {
+			// Read it as JSON
+			var jsonString = window.localStorage.getItem(key),
+				jsonData;
+			if(jsonString) {
+				try {
+					jsonData = JSON.parse(jsonString);
+				} catch(e) {}
+				if(jsonData) {
+					// Convert it to a tiddler
+					var incomingTiddler = new $tw.Tiddler(jsonData);
+					if(incomingTiddler) {
+						// Get any existing tiddler
+						var title = incomingTiddler.fields.title,
+							existingTiddler = $tw.wiki.getTiddler(title);
+						if(existingTiddler && existingTiddler.isEqual(incomingTiddler)) {
+							// If the incoming tiddler is the same as the existing then we can delete the local storage version
+							window.localStorage.removeItem(key);
+						} else {
+							$tw.wiki.addTiddler(incomingTiddler);
+							log.push(title);
+						}
+					}
+				}
+			}
+		}
+	}
+	// Make sure that all the tiddlers we've loaded are marked as dirty at startup
+	Array.prototype.push.apply($tw.boot.preloadDirty,log);
+	// Save the log
+	$tw.wiki.addTiddler({
+		title: "$:/temp/BrowserStorage/Log",
+		text: $tw.utils.stringifyList(log)
+	});
+}
+
+})();
+
+</script>
 
 </head>
 <body class="tc-body">
@@ -153,10 +233,6 @@ Error message and password prompt
 
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
-
-<li>$:/_Macros/dayofweek.js</li>
-
-<li>$:/_Macros/weekofmonth.js</li>
 
 <li>$:/config/AutoSave</li>
 
@@ -584,88 +660,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20190712200609887" modified="20190712201038994" module-type="macro" tags="WikiTweaks" title="$:/_Macros/dayofweek.js" type="application/javascript">
-<pre>/*\
-title: dayofweek.js
-type: application/javascript
-module-type: macro
-This is a macro returns the mane of the day of the week in german
-\*/
-
-(function(){
-
-/*jslint node: true, browser: true */
-/*global $tw: false */
-&quot;use strict&quot;;
-
-
-exports.name = &quot;dayofweek&quot;;
-
-exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
-
-/*
-Run the macro
-*/
-
-exports.run = function(wday, mday) {
-    var d = new Date();
-    if ( !wday ) { wday  = d.getDay(); }
-    //wday = 0 [Sun] ... 6 [Sat] (day of week)
-   
-    var weekdays = [&quot;Sonntag&quot;, &quot;Montag&quot;, &quot;Dienstag&quot;, &quot;Mittwoch&quot;, &quot;Donnerstag&quot;, &quot;Freitag&quot;, &quot;Samstag&quot;];
-    return weekdays[wday]; 
-
-};
-
-})();</pre>
-</div>
-<div created="20190311113332172" modified="20190712074945698" module-type="macro" tags="WikiTweaks" title="$:/_Macros/weekofmonth.js" type="application/javascript">
-<pre>/*\
-title: weekofmonth.js
-type: application/javascript
-module-type: macro
-This is a macro returns the number of the week in the month
-\*/
-
-(function(){
-
-/*jslint node: true, browser: true */
-/*global $tw: false */
-&quot;use strict&quot;;
-
-
-exports.name = &quot;weekofmonth&quot;;
-
-exports.params = [  { name: &quot;wday&quot; } ,  { name: &quot;mday&quot; } ];
-
-/*
-Run the macro
-*/
-
-exports.run = function(wday, mday) {
-    var d = new Date();
-    if ( !wday ) { wday  = d.getDay(); }
-    //wday = 0 [Sun] ... 6 [Sat] (day of week)
-    if (!mday)  { mday= d.getDate(); }
-    //mday = 1 ... 31 (day of month)
-
-    //we start counting weeks with 1:
-    var wnum = 1;
-    var add = 2;
-    // if the month starts on a monday: ...
-    if (((mday - wday) %7) == 0 ) { add = 1; }
-
-    // if (mday &lt; wday) { wnum = 1; }
-    if (mday &gt;= wday) {
-        wnum = Math.floor((mday -wday)/7) + add;
-    }
-    return wnum; 
-
-};
-
-})();</pre>
-</div>
-<div created="20200804200024442" modified="20200804200024442" title="$:/config/AutoSave">
+<div created="20200804200231194" modified="20200804200231194" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
 <div created="20200804195410856" modified="20200804195410856" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
@@ -10077,7 +10072,7 @@ exports.run = function(wday, mday) {
 <div status="complete" title="$:/Import">
 <pre>Folgende Tiddler wurden importiert:
 
-# [[$:/_Macros/dayofweek.js]]</pre>
+# [[$:/favicon.ico]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -13939,11 +13934,11 @@ exports.run = function(wday, mday) {
     }
 }</pre>
 </div>
-<div created="20200804192610097" modified="20200804192610097" title="$:/SiteSubtitle">
-<pre></pre>
+<div created="20200804192610097" modified="20200804200224844" title="$:/SiteSubtitle">
+<pre>Ì†æÌµù</pre>
 </div>
-<div created="20200804192603426" modified="20200804195835493" title="$:/SiteTitle">
-<pre>Flylady Ì†æÌµù</pre>
+<div created="20200804192603426" modified="20200804200205080" title="$:/SiteTitle">
+<pre>Flylady</pre>
 </div>
 <div created="20200804195651200" modified="20200804195705393" title="$:/state/tab--219645345">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
@@ -13951,19 +13946,19 @@ exports.run = function(wday, mday) {
 <div created="20200804195641257" modified="20200804195641257" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
 </div>
-<div created="20200804192634971" modified="20200804200131078" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200804192634971" modified="20200804200228318" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200804192636127" modified="20200804200028554" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20200804192636127" modified="20200804200254824" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
 <div created="20200804192520060" modified="20200804195848492" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
-<div created="20200804195819518" list="$:/ControlPanel FlyLady [[Wichtige Links]]" modified="20200804195908425" title="$:/StoryList">
+<div created="20200804200200674" list="$:/ControlPanel FlyLady" modified="20200804200200674" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
