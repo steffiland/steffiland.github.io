@@ -1,13 +1,14 @@
 ---
 title: "Rezepte"
-permalink: /rezepte/
 layout: single
 author_profile: false
 ---
 
-Alle Rezepte:
-{% for post in site.categories.rezepte %}
-    {% if post.url %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+## :
+ {% assign category = page.title|downcase %}
+
+{% for post in site.posts %}
+{% if post.categories contains {{category}}  %}
+* {{ post.title }}
+{% endif %}
+{% endfor %}
