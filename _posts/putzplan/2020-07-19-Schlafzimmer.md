@@ -3,6 +3,7 @@ title: "Schlafzimmer"
 categories:
   - putzplan
 tags: Zimmer
+published: false
 ---
 <!--more-->
  - [ ] herumliegende Kledung wegräumen
@@ -18,5 +19,5 @@ tags: Zimmer
 {%  include_relative stuff/all_rooms.md id="schlafzimmer" %}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzE5MTk4MTZdfQ==
+eyJoaXN0b3J5IjpbMjI2NjY5NjksLTIwNzE5MTk4MTZdfQ==
 -->
