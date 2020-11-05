@@ -3,6 +3,7 @@ title: "Putzzonen Übersicht"
 categories:
   - putzplan
 tags:
+published: false
 ---
 
 <!--more-->
@@ -20,5 +21,5 @@ tags:
 -   Zone  4:  [Schlafzimmer](../Schlafzimmer)  mit Ankleide,  [Bad](../Bad) OG 
 -   Zone  5:  [Stube](../Stube),  [Hobby](../Hobby)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTE2Mjg3NSwxOTM5NzU3NzA3XX0=
+eyJoaXN0b3J5IjpbMTg4MjcwMjgyMiwxOTM5NzU3NzA3XX0=
 -->

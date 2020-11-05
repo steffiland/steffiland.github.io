@@ -139,7 +139,7 @@ tag_archive:
 collections:
   recipes:
     output: true
-    permalink: /rezepte/:title
+    permalink: /rezept/:title
 
 # extra Javascripte fuer Putzplan inkludieren
 head_scripts:

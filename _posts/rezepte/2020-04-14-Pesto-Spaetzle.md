@@ -1,7 +1,7 @@
 ---
 title: Pesto-Spätzle
 categories:
-  - Küche
+  - Rezepte
 tags:
   - rezept
   - Kinder
@@ -36,5 +36,6 @@ Zum Servieren:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTg3ODMwNiwyOTEwNjA0MjJdfQ==
+eyJoaXN0b3J5IjpbMTIxMDU2MDk0MiwxMTExODc4MzA2LDI5MT
+A2MDQyMl19
 -->
