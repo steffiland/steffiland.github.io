@@ -3,6 +3,7 @@ title: "Kinderzimmer"
 categories:
   - putzplan
 tags: Zimmer
+published: false
 ---
 <!--more-->
  - [ ] Schubladen/Schränke in Ordnung bringen
@@ -21,5 +22,5 @@ tags: Zimmer
 {%  include_relative stuff/all_rooms.md id="kinderzimmer" %}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzNzM3NF19
+eyJoaXN0b3J5IjpbMTk5OTgxNzI4MSwtMTQzMjM3Mzc0XX0=
 -->
