@@ -1,6 +1,3 @@
 [submodule "assets/pushdemo"]
 	path = assets/static/pushdemo
 	url = https://gist.github.com/950674607faabe2cc0bc9e5fad62da21.git
-[submodule "assets/static/putzplan"]
-	path = assets/static/putzplan
-	url = https://gist.github.com/72abc4931633b13a170c8d13ad72fad0.git
