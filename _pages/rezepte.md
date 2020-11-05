@@ -1,6 +1,6 @@
 ---
 title: "Rezepte"
-layout: single
+permalink: /about/
 author_profile: false
 ---
 
